@@ -267,11 +267,6 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
     return result;
   }
   
-  Future<bool> iscom_iflytek_cloud_msc_util_FileUtil() async {
-    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_msc_util_FileUtil', {'refId': refId});
-    return result;
-  }
-  
   Future<bool> iscom_iflytek_cloud_msc_util_DataLogger() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_msc_util_DataLogger', {'refId': refId});
     return result;
@@ -721,11 +716,6 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
   Future<com_iflytek_cloud_msc_util_AppInfoUtil> ascom_iflytek_cloud_msc_util_AppInfoUtil() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_msc_util_AppInfoUtil', {'refId': refId});
     return com_iflytek_cloud_msc_util_AppInfoUtil()..refId = result;
-  }
-  
-  Future<com_iflytek_cloud_msc_util_FileUtil> ascom_iflytek_cloud_msc_util_FileUtil() async {
-    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_msc_util_FileUtil', {'refId': refId});
-    return com_iflytek_cloud_msc_util_FileUtil()..refId = result;
   }
   
   Future<com_iflytek_cloud_msc_util_DataLogger> ascom_iflytek_cloud_msc_util_DataLogger() async {

@@ -71,7 +71,6 @@ export 'com/iflytek/cloud/DataDownloader.g.dart';
 export 'com/iflytek/cloud/SpeechTranscripter.g.dart';
 export 'com/iflytek/cloud/FaceRequest.g.dart';
 export 'com/iflytek/cloud/msc/util/DataUtil.g.dart';
-export 'com/iflytek/cloud/msc/util/FileUtil.g.dart';
 export 'com/iflytek/cloud/msc/util/UniqueIDUtil.g.dart';
 export 'com/iflytek/cloud/msc/util/RSAUtil.g.dart';
 export 'com/iflytek/cloud/msc/util/Base64.g.dart';
