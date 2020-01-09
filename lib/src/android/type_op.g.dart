@@ -87,13 +87,28 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
     return result;
   }
   
+  Future<bool> iscom_iflytek_cloud_SpeakerVerifier() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_SpeakerVerifier', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> iscom_iflytek_cloud_ErrorCode() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_ErrorCode', {'refId': refId});
     return result;
   }
   
+  Future<bool> iscom_iflytek_cloud_SpeechTranscripter() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_SpeechTranscripter', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> iscom_iflytek_cloud_record_PcmRecorder() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_record_PcmRecorder', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_IdentityVerifier() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_IdentityVerifier', {'refId': refId});
     return result;
   }
   
@@ -137,8 +152,48 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
     return result;
   }
   
+  Future<bool> iscom_iflytek_cloud_FaceRequest() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_FaceRequest', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_SpeechUtility() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_SpeechUtility', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_SpeechSynthesizer() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_SpeechSynthesizer', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> iscom_iflytek_cloud_IdentityResult() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_IdentityResult', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_TextUnderstander() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_TextUnderstander', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_speech_impl_VoiceWakeuperImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_speech_impl_VoiceWakeuperImpl', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_speech_impl_SpeechTranscripterImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_speech_impl_SpeechTranscripterImpl', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_speech_impl_TextUnderstanderImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_speech_impl_TextUnderstanderImpl', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_speech_impl_IdentityVerifierImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_speech_impl_IdentityVerifierImpl', {'refId': refId});
     return result;
   }
   
@@ -147,8 +202,33 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
     return result;
   }
   
+  Future<bool> iscom_iflytek_cloud_speech_impl_SpeechSynthesizerImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_speech_impl_SpeechSynthesizerImpl', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_speech_impl_SpeechRecognizerImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_speech_impl_SpeechRecognizerImpl', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> iscom_iflytek_cloud_speech_impl_SpeechUnderstanderImpl() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_speech_impl_SpeechUnderstanderImpl', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_speech_impl_FaceRequestImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_speech_impl_FaceRequestImpl', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_speech_impl_SpeakerVerifierImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_speech_impl_SpeakerVerifierImpl', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_speech_impl_SpeechEvaluatorImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_speech_impl_SpeechEvaluatorImpl', {'refId': refId});
     return result;
   }
   
@@ -252,6 +332,16 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
     return result;
   }
   
+  Future<bool> iscom_iflytek_cloud_msc_ist_IstSession() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_msc_ist_IstSession', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_SpeechRecognizer() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_SpeechRecognizer', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> iscom_iflytek_cloud_SpeechError() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_SpeechError', {'refId': refId});
     return result;
@@ -262,8 +352,28 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
     return result;
   }
   
+  Future<bool> iscom_iflytek_cloud_DataDownloader() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_DataDownloader', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_SpeechEvaluator() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_SpeechEvaluator', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_VoiceWakeuper() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_VoiceWakeuper', {'refId': refId});
+    return result;
+  }
+  
   Future<bool> iscom_iflytek_cloud_EvaluatorResult() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_EvaluatorResult', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_SpeechUnderstander() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_SpeechUnderstander', {'refId': refId});
     return result;
   }
   
@@ -274,6 +384,11 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
   
   Future<bool> iscom_iflytek_cloud_resource_Resource() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_resource_Resource', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_FaceDetector() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_FaceDetector', {'refId': refId});
     return result;
   }
   
@@ -289,6 +404,11 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
   
   Future<bool> iscom_iflytek_cloud_SpeechConstant() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_SpeechConstant', {'refId': refId});
+    return result;
+  }
+  
+  Future<bool> iscom_iflytek_cloud_DataUploader() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::isKindOfcom_iflytek_cloud_DataUploader', {'refId': refId});
     return result;
   }
   
@@ -423,14 +543,29 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
     return com_iflytek_idata_extension_IFlyCollectorExt()..refId = result;
   }
   
+  Future<com_iflytek_cloud_SpeakerVerifier> ascom_iflytek_cloud_SpeakerVerifier() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_SpeakerVerifier', {'refId': refId});
+    return com_iflytek_cloud_SpeakerVerifier()..refId = result;
+  }
+  
   Future<com_iflytek_cloud_ErrorCode> ascom_iflytek_cloud_ErrorCode() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_ErrorCode', {'refId': refId});
     return com_iflytek_cloud_ErrorCode()..refId = result;
   }
   
+  Future<com_iflytek_cloud_SpeechTranscripter> ascom_iflytek_cloud_SpeechTranscripter() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_SpeechTranscripter', {'refId': refId});
+    return com_iflytek_cloud_SpeechTranscripter()..refId = result;
+  }
+  
   Future<com_iflytek_cloud_record_PcmRecorder> ascom_iflytek_cloud_record_PcmRecorder() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_record_PcmRecorder', {'refId': refId});
     return com_iflytek_cloud_record_PcmRecorder()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_IdentityVerifier> ascom_iflytek_cloud_IdentityVerifier() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_IdentityVerifier', {'refId': refId});
+    return com_iflytek_cloud_IdentityVerifier()..refId = result;
   }
   
   Future<com_iflytek_cloud_util_AudioDetector> ascom_iflytek_cloud_util_AudioDetector() async {
@@ -473,9 +608,49 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
     return com_iflytek_cloud_util_VolumeUtil()..refId = result;
   }
   
+  Future<com_iflytek_cloud_FaceRequest> ascom_iflytek_cloud_FaceRequest() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_FaceRequest', {'refId': refId});
+    return com_iflytek_cloud_FaceRequest()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_SpeechUtility> ascom_iflytek_cloud_SpeechUtility() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_SpeechUtility', {'refId': refId});
+    return com_iflytek_cloud_SpeechUtility()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_SpeechSynthesizer> ascom_iflytek_cloud_SpeechSynthesizer() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_SpeechSynthesizer', {'refId': refId});
+    return com_iflytek_cloud_SpeechSynthesizer()..refId = result;
+  }
+  
   Future<com_iflytek_cloud_IdentityResult> ascom_iflytek_cloud_IdentityResult() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_IdentityResult', {'refId': refId});
     return com_iflytek_cloud_IdentityResult()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_TextUnderstander> ascom_iflytek_cloud_TextUnderstander() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_TextUnderstander', {'refId': refId});
+    return com_iflytek_cloud_TextUnderstander()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_speech_impl_VoiceWakeuperImpl> ascom_iflytek_cloud_speech_impl_VoiceWakeuperImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_speech_impl_VoiceWakeuperImpl', {'refId': refId});
+    return com_iflytek_cloud_speech_impl_VoiceWakeuperImpl()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_speech_impl_SpeechTranscripterImpl> ascom_iflytek_cloud_speech_impl_SpeechTranscripterImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_speech_impl_SpeechTranscripterImpl', {'refId': refId});
+    return com_iflytek_cloud_speech_impl_SpeechTranscripterImpl()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_speech_impl_TextUnderstanderImpl> ascom_iflytek_cloud_speech_impl_TextUnderstanderImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_speech_impl_TextUnderstanderImpl', {'refId': refId});
+    return com_iflytek_cloud_speech_impl_TextUnderstanderImpl()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_speech_impl_IdentityVerifierImpl> ascom_iflytek_cloud_speech_impl_IdentityVerifierImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_speech_impl_IdentityVerifierImpl', {'refId': refId});
+    return com_iflytek_cloud_speech_impl_IdentityVerifierImpl()..refId = result;
   }
   
   Future<com_iflytek_cloud_speech_impl_FaceDetectorImpl> ascom_iflytek_cloud_speech_impl_FaceDetectorImpl() async {
@@ -483,9 +658,34 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
     return com_iflytek_cloud_speech_impl_FaceDetectorImpl()..refId = result;
   }
   
+  Future<com_iflytek_cloud_speech_impl_SpeechSynthesizerImpl> ascom_iflytek_cloud_speech_impl_SpeechSynthesizerImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_speech_impl_SpeechSynthesizerImpl', {'refId': refId});
+    return com_iflytek_cloud_speech_impl_SpeechSynthesizerImpl()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_speech_impl_SpeechRecognizerImpl> ascom_iflytek_cloud_speech_impl_SpeechRecognizerImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_speech_impl_SpeechRecognizerImpl', {'refId': refId});
+    return com_iflytek_cloud_speech_impl_SpeechRecognizerImpl()..refId = result;
+  }
+  
   Future<com_iflytek_cloud_speech_impl_SpeechUnderstanderImpl> ascom_iflytek_cloud_speech_impl_SpeechUnderstanderImpl() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_speech_impl_SpeechUnderstanderImpl', {'refId': refId});
     return com_iflytek_cloud_speech_impl_SpeechUnderstanderImpl()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_speech_impl_FaceRequestImpl> ascom_iflytek_cloud_speech_impl_FaceRequestImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_speech_impl_FaceRequestImpl', {'refId': refId});
+    return com_iflytek_cloud_speech_impl_FaceRequestImpl()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_speech_impl_SpeakerVerifierImpl> ascom_iflytek_cloud_speech_impl_SpeakerVerifierImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_speech_impl_SpeakerVerifierImpl', {'refId': refId});
+    return com_iflytek_cloud_speech_impl_SpeakerVerifierImpl()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_speech_impl_SpeechEvaluatorImpl> ascom_iflytek_cloud_speech_impl_SpeechEvaluatorImpl() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_speech_impl_SpeechEvaluatorImpl', {'refId': refId});
+    return com_iflytek_cloud_speech_impl_SpeechEvaluatorImpl()..refId = result;
   }
   
   Future<com_iflytek_cloud_msc_util_FuncAdapterSdk10> ascom_iflytek_cloud_msc_util_FuncAdapterSdk10() async {
@@ -588,6 +788,16 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
     return com_iflytek_cloud_msc_ist_AudioAccessor()..refId = result;
   }
   
+  Future<com_iflytek_cloud_msc_ist_IstSession> ascom_iflytek_cloud_msc_ist_IstSession() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_msc_ist_IstSession', {'refId': refId});
+    return com_iflytek_cloud_msc_ist_IstSession()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_SpeechRecognizer> ascom_iflytek_cloud_SpeechRecognizer() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_SpeechRecognizer', {'refId': refId});
+    return com_iflytek_cloud_SpeechRecognizer()..refId = result;
+  }
+  
   Future<com_iflytek_cloud_SpeechError> ascom_iflytek_cloud_SpeechError() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_SpeechError', {'refId': refId});
     return com_iflytek_cloud_SpeechError()..refId = result;
@@ -598,9 +808,29 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
     return com_iflytek_cloud_Setting()..refId = result;
   }
   
+  Future<com_iflytek_cloud_DataDownloader> ascom_iflytek_cloud_DataDownloader() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_DataDownloader', {'refId': refId});
+    return com_iflytek_cloud_DataDownloader()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_SpeechEvaluator> ascom_iflytek_cloud_SpeechEvaluator() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_SpeechEvaluator', {'refId': refId});
+    return com_iflytek_cloud_SpeechEvaluator()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_VoiceWakeuper> ascom_iflytek_cloud_VoiceWakeuper() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_VoiceWakeuper', {'refId': refId});
+    return com_iflytek_cloud_VoiceWakeuper()..refId = result;
+  }
+  
   Future<com_iflytek_cloud_EvaluatorResult> ascom_iflytek_cloud_EvaluatorResult() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_EvaluatorResult', {'refId': refId});
     return com_iflytek_cloud_EvaluatorResult()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_SpeechUnderstander> ascom_iflytek_cloud_SpeechUnderstander() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_SpeechUnderstander', {'refId': refId});
+    return com_iflytek_cloud_SpeechUnderstander()..refId = result;
   }
   
   Future<com_iflytek_cloud_SpeechEvent> ascom_iflytek_cloud_SpeechEvent() async {
@@ -611,6 +841,11 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
   Future<com_iflytek_cloud_resource_Resource> ascom_iflytek_cloud_resource_Resource() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_resource_Resource', {'refId': refId});
     return com_iflytek_cloud_resource_Resource()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_FaceDetector> ascom_iflytek_cloud_FaceDetector() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_FaceDetector', {'refId': refId});
+    return com_iflytek_cloud_FaceDetector()..refId = result;
   }
   
   Future<com_iflytek_cloud_WakeuperResult> ascom_iflytek_cloud_WakeuperResult() async {
@@ -626,6 +861,11 @@ extension TypeOpXfiatFluttifyAndroid on Ref {
   Future<com_iflytek_cloud_SpeechConstant> ascom_iflytek_cloud_SpeechConstant() async {
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_SpeechConstant', {'refId': refId});
     return com_iflytek_cloud_SpeechConstant()..refId = result;
+  }
+  
+  Future<com_iflytek_cloud_DataUploader> ascom_iflytek_cloud_DataUploader() async {
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('RefClass::ascom_iflytek_cloud_DataUploader', {'refId': refId});
+    return com_iflytek_cloud_DataUploader()..refId = result;
   }
   
   Future<com_iflytek_cloud_RecognizerResult> ascom_iflytek_cloud_RecognizerResult() async {
