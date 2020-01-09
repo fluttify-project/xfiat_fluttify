@@ -1,0 +1,28 @@
+name: xfiat_fluttify
+description: An `xfiat` flutter plugin, Powered by `Fluttify` engine.
+version: 0.0.1
+author: yohom <yohombao@gmail.com>
+homepage: https://github.com/fluttify-project/xfiat_fluttify
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+  flutter: ">=1.12.13 <2.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  foundation_fluttify: ^0.4.5+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.fluttify.xfiat_fluttify
+        pluginClass: XfiatFluttifyPlugin
+      ios:
+        pluginClass: XfiatFluttifyPlugin
