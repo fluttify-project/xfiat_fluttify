@@ -15,6 +15,7 @@ class SpeechRecognizer {
 
   SpeechRecognizer.ios(this._iosModel) : _androidModel = null;
 
+  /// 添加识别参数
   Future<void> setParameter(String key, String value) async {
     return platform(
       android: (pool) => _androidModel.setParameter(key, value),
@@ -22,6 +23,7 @@ class SpeechRecognizer {
     );
   }
 
+  /// 开始识别
   Future<void> start({
     FutureValueChanged<int> onVolumeChanged,
     FutureValueChanged<SpeechError> onError,

@@ -6,6 +6,7 @@ import 'speech_recognizer.dart';
 class SpeechService {
   SpeechService._();
 
+  /// 初始化
   static Future<void> init(String appId) async {
     return platform(
       android: (pool) async {
@@ -19,6 +20,7 @@ class SpeechService {
     );
   }
 
+  /// 创建识别器
   static Future<SpeechRecognizer> createRecognizer() async {
     return platform(
       android: (pool) async {
