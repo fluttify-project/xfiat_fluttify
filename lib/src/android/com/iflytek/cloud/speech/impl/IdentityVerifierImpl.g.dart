@@ -145,6 +145,28 @@ class com_iflytek_cloud_speech_impl_IdentityVerifierImpl extends java_lang_Objec
     }
   }
   
+  Future<void> cancel(bool var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.iflytek.cloud.speech.impl.IdentityVerifierImpl@$refId::cancel([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.IdentityVerifierImpl::cancel', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<bool> isWorking() async {
     // print log
     if (fluttifyLogEnabled) {

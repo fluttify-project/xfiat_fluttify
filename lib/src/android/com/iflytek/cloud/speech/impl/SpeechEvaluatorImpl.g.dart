@@ -123,6 +123,28 @@ class com_iflytek_cloud_speech_impl_SpeechEvaluatorImpl extends java_lang_Object
     }
   }
   
+  Future<void> cancel(bool var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.iflytek.cloud.speech.impl.SpeechEvaluatorImpl@$refId::cancel([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.SpeechEvaluatorImpl::cancel', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<bool> isEvaluating() async {
     // print log
     if (fluttifyLogEnabled) {

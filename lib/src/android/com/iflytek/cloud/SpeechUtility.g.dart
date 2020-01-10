@@ -74,6 +74,28 @@ class com_iflytek_cloud_SpeechUtility extends java_lang_Object  {
     }
   }
   
+  Future<bool> destroy() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.iflytek.cloud.SpeechUtility@$refId::destroy([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.SpeechUtility::destroy', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<bool> checkServiceInstalled() async {
     // print log
     if (fluttifyLogEnabled) {
@@ -148,6 +170,50 @@ class com_iflytek_cloud_SpeechUtility extends java_lang_Object  {
   
     // invoke native method
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.SpeechUtility::getComponentUrl', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<bool> setParameter(String var1, String var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.iflytek.cloud.SpeechUtility@$refId::setParameter([\'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.SpeechUtility::setParameter', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<String> getParameter(String var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.iflytek.cloud.SpeechUtility@$refId::getParameter([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.SpeechUtility::getParameter', {"var1": var1, "refId": refId});
   
   
     // handle native call

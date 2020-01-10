@@ -3282,6 +3282,100 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             methodResult.success("success");
         });
         // method
+        put("com.iflytek.cloud.SpeakerVerifier::setParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            String var2 = (String) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeakerVerifier ref = (com.iflytek.cloud.SpeakerVerifier) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeakerVerifier@" + refId + "::setParameter(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.setParameter(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.SpeakerVerifier::getParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeakerVerifier ref = (com.iflytek.cloud.SpeakerVerifier) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeakerVerifier@" + refId + "::getParameter(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getParameter(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.SpeakerVerifier::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeakerVerifier ref = (com.iflytek.cloud.SpeakerVerifier) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeakerVerifier@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.iflytek.cloud.SpeakerVerifier::sendRequest", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -3664,6 +3758,100 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
             // result
             methodResult.success("success");
+        });
+        // method
+        put("com.iflytek.cloud.SpeechTranscripter::setParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            String var2 = (String) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechTranscripter ref = (com.iflytek.cloud.SpeechTranscripter) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechTranscripter@" + refId + "::setParameter(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.setParameter(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.SpeechTranscripter::getParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechTranscripter ref = (com.iflytek.cloud.SpeechTranscripter) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechTranscripter@" + refId + "::getParameter(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getParameter(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.SpeechTranscripter::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechTranscripter ref = (com.iflytek.cloud.SpeechTranscripter) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechTranscripter@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
         });
         // method
         put("com.iflytek.cloud.SynthesizerListener::onSpeakBegin", (args, methodResult) -> {
@@ -4428,6 +4616,100 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
             // result
             methodResult.success("success");
+        });
+        // method
+        put("com.iflytek.cloud.IdentityVerifier::setParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            String var2 = (String) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.IdentityVerifier ref = (com.iflytek.cloud.IdentityVerifier) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.IdentityVerifier@" + refId + "::setParameter(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.setParameter(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.IdentityVerifier::getParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.IdentityVerifier ref = (com.iflytek.cloud.IdentityVerifier) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.IdentityVerifier@" + refId + "::getParameter(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getParameter(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.IdentityVerifier::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.IdentityVerifier ref = (com.iflytek.cloud.IdentityVerifier) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.IdentityVerifier@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
         });
         // method
         put("com.iflytek.cloud.util.Accelerometer.CLOCKWISE_ANGLE::getValue", (args, methodResult) -> {
@@ -5367,6 +5649,100 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             methodResult.success("success");
         });
         // method
+        put("com.iflytek.cloud.FaceRequest::setParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            String var2 = (String) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.FaceRequest ref = (com.iflytek.cloud.FaceRequest) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.FaceRequest@" + refId + "::setParameter(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.setParameter(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.FaceRequest::getParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.FaceRequest ref = (com.iflytek.cloud.FaceRequest) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.FaceRequest@" + refId + "::getParameter(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getParameter(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.FaceRequest::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.FaceRequest ref = (com.iflytek.cloud.FaceRequest) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.FaceRequest@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.iflytek.cloud.SpeechListener::onEvent", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -5534,6 +5910,36 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             }
         });
         // method
+        put("com.iflytek.cloud.SpeechUtility::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechUtility ref = (com.iflytek.cloud.SpeechUtility) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechUtility@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.iflytek.cloud.SpeechUtility::checkServiceInstalled", (args, methodResult) -> {
             // args
         
@@ -5642,6 +6048,70 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             String result;
             try {
                 result = ref.getComponentUrl();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.SpeechUtility::setParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            String var2 = (String) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechUtility ref = (com.iflytek.cloud.SpeechUtility) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechUtility@" + refId + "::setParameter(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.setParameter(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.SpeechUtility::getParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechUtility ref = (com.iflytek.cloud.SpeechUtility) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechUtility@" + refId + "::getParameter(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getParameter(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -6376,6 +6846,100 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             methodResult.success(result);
         });
         // method
+        put("com.iflytek.cloud.SpeechSynthesizer::setParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            String var2 = (String) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechSynthesizer ref = (com.iflytek.cloud.SpeechSynthesizer) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechSynthesizer@" + refId + "::setParameter(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.setParameter(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.SpeechSynthesizer::getParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechSynthesizer ref = (com.iflytek.cloud.SpeechSynthesizer) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechSynthesizer@" + refId + "::getParameter(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getParameter(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.SpeechSynthesizer::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechSynthesizer ref = (com.iflytek.cloud.SpeechSynthesizer) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechSynthesizer@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.iflytek.cloud.IdentityResult::getResultString", (args, methodResult) -> {
             // args
         
@@ -6836,6 +7400,100 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             methodResult.success("success");
         });
         // method
+        put("com.iflytek.cloud.TextUnderstander::setParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            String var2 = (String) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.TextUnderstander ref = (com.iflytek.cloud.TextUnderstander) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.TextUnderstander@" + refId + "::setParameter(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.setParameter(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.TextUnderstander::getParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.TextUnderstander ref = (com.iflytek.cloud.TextUnderstander) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.TextUnderstander@" + refId + "::getParameter(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getParameter(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.TextUnderstander::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.TextUnderstander ref = (com.iflytek.cloud.TextUnderstander) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.TextUnderstander@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.iflytek.cloud.speech.impl.VoiceWakeuperImpl::queryResource", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -7036,6 +7694,66 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             methodResult.success("success");
         });
         // method
+        put("com.iflytek.cloud.speech.impl.VoiceWakeuperImpl::cancel", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.speech.impl.VoiceWakeuperImpl ref = (com.iflytek.cloud.speech.impl.VoiceWakeuperImpl) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.speech.impl.VoiceWakeuperImpl@" + refId + "::cancel(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.cancel(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.iflytek.cloud.speech.impl.VoiceWakeuperImpl::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.speech.impl.VoiceWakeuperImpl ref = (com.iflytek.cloud.speech.impl.VoiceWakeuperImpl) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.speech.impl.VoiceWakeuperImpl@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.iflytek.cloud.speech.impl.VoiceWakeuperImpl::isListening", (args, methodResult) -> {
             // args
         
@@ -7178,6 +7896,36 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             // invoke native method
             try {
                 ref.stopTranscripting();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.iflytek.cloud.speech.impl.SpeechTranscripterImpl::cancel", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.speech.impl.SpeechTranscripterImpl ref = (com.iflytek.cloud.speech.impl.SpeechTranscripterImpl) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.speech.impl.SpeechTranscripterImpl@" + refId + "::cancel(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.cancel(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -7455,6 +8203,130 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             methodResult.success(result);
         });
         // method
+        put("com.iflytek.cloud.speech.impl.TextUnderstanderImpl::cancel", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.speech.impl.TextUnderstanderImpl ref = (com.iflytek.cloud.speech.impl.TextUnderstanderImpl) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.speech.impl.TextUnderstanderImpl@" + refId + "::cancel(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.cancel(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.iflytek.cloud.speech.impl.TextUnderstanderImpl::setParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            String var2 = (String) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.speech.impl.TextUnderstanderImpl ref = (com.iflytek.cloud.speech.impl.TextUnderstanderImpl) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.speech.impl.TextUnderstanderImpl@" + refId + "::setParameter(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.setParameter(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.speech.impl.TextUnderstanderImpl::getParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.speech.impl.TextUnderstanderImpl ref = (com.iflytek.cloud.speech.impl.TextUnderstanderImpl) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.speech.impl.TextUnderstanderImpl@" + refId + "::getParameter(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getParameter(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.speech.impl.TextUnderstanderImpl::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.speech.impl.TextUnderstanderImpl ref = (com.iflytek.cloud.speech.impl.TextUnderstanderImpl) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.speech.impl.TextUnderstanderImpl@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.iflytek.cloud.speech.impl.IdentityVerifierImpl::pushSessionInfo", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -7620,6 +8492,36 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
             // result
             methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.speech.impl.IdentityVerifierImpl::cancel", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.speech.impl.IdentityVerifierImpl ref = (com.iflytek.cloud.speech.impl.IdentityVerifierImpl) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.speech.impl.IdentityVerifierImpl@" + refId + "::cancel(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.cancel(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
         });
         // method
         put("com.iflytek.cloud.speech.impl.IdentityVerifierImpl::isWorking", (args, methodResult) -> {
@@ -8000,6 +8902,35 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
             // result
             methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.speech.impl.SpeechSynthesizerImpl::onBufferReady", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.speech.impl.SpeechSynthesizerImpl ref = (com.iflytek.cloud.speech.impl.SpeechSynthesizerImpl) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.speech.impl.SpeechSynthesizerImpl@" + refId + "::onBufferReady(" + "" + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.onBufferReady();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
         });
         // method
         put("com.iflytek.cloud.speech.impl.SpeechSynthesizerImpl::synthesizeToUri", (args, methodResult) -> {
@@ -8463,6 +9394,36 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             methodResult.success(result);
         });
         // method
+        put("com.iflytek.cloud.speech.impl.SpeechSynthesizerImpl::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.speech.impl.SpeechSynthesizerImpl ref = (com.iflytek.cloud.speech.impl.SpeechSynthesizerImpl) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.speech.impl.SpeechSynthesizerImpl@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.iflytek.cloud.speech.impl.SpeechRecognizerImpl::pushSessionInfo", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -8575,6 +9536,36 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             // invoke native method
             try {
                 ref.stopListening();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.iflytek.cloud.speech.impl.SpeechRecognizerImpl::cancel", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.speech.impl.SpeechRecognizerImpl ref = (com.iflytek.cloud.speech.impl.SpeechRecognizerImpl) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.speech.impl.SpeechRecognizerImpl@" + refId + "::cancel(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.cancel(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -9227,6 +10218,36 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             methodResult.success("success");
         });
         // method
+        put("com.iflytek.cloud.speech.impl.FaceRequestImpl::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.speech.impl.FaceRequestImpl ref = (com.iflytek.cloud.speech.impl.FaceRequestImpl) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.speech.impl.FaceRequestImpl@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.iflytek.cloud.speech.impl.SpeakerVerifierImpl::startListening", (args, methodResult) -> {
             // args
             // ref arg
@@ -9569,6 +10590,36 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             // invoke native method
             try {
                 ref.stopEvaluating();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
+        put("com.iflytek.cloud.speech.impl.SpeechEvaluatorImpl::cancel", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            boolean var1 = (boolean) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.speech.impl.SpeechEvaluatorImpl ref = (com.iflytek.cloud.speech.impl.SpeechEvaluatorImpl) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.speech.impl.SpeechEvaluatorImpl@" + refId + "::cancel(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.cancel(var1);
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
@@ -14353,6 +15404,36 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             methodResult.success("success");
         });
         // method
+        put("com.iflytek.cloud.msc.ist.IstSession::sessionEnd", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.msc.ist.IstSession ref = (com.iflytek.cloud.msc.ist.IstSession) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.msc.ist.IstSession@" + refId + "::sessionEnd(" + var1 + ")");
+            }
+        
+            // invoke native method
+            try {
+                ref.sessionEnd(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success("success");
+        });
+        // method
         put("com.iflytek.cloud.msc.ist.IstSession::pushAudioData", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -15045,6 +16126,100 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
             // result
             methodResult.success("success");
+        });
+        // method
+        put("com.iflytek.cloud.SpeechRecognizer::setParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            String var2 = (String) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechRecognizer ref = (com.iflytek.cloud.SpeechRecognizer) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechRecognizer@" + refId + "::setParameter(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.setParameter(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.SpeechRecognizer::getParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechRecognizer ref = (com.iflytek.cloud.SpeechRecognizer) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechRecognizer@" + refId + "::getParameter(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getParameter(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.SpeechRecognizer::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechRecognizer ref = (com.iflytek.cloud.SpeechRecognizer) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechRecognizer@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
         });
         // method
         put("com.iflytek.cloud.SpeechError::getErrorCode", (args, methodResult) -> {
@@ -16068,6 +17243,100 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             methodResult.success("success");
         });
         // method
+        put("com.iflytek.cloud.SpeechEvaluator::setParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            String var2 = (String) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechEvaluator ref = (com.iflytek.cloud.SpeechEvaluator) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechEvaluator@" + refId + "::setParameter(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.setParameter(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.SpeechEvaluator::getParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechEvaluator ref = (com.iflytek.cloud.SpeechEvaluator) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechEvaluator@" + refId + "::getParameter(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getParameter(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.SpeechEvaluator::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechEvaluator ref = (com.iflytek.cloud.SpeechEvaluator) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechEvaluator@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.iflytek.cloud.TranscripterListener::onVolumeChanged", (args, methodResult) -> {
             // args
             // jsonable arg
@@ -16581,6 +17850,100 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             methodResult.success("success");
         });
         // method
+        put("com.iflytek.cloud.VoiceWakeuper::setParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            String var2 = (String) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.VoiceWakeuper ref = (com.iflytek.cloud.VoiceWakeuper) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.VoiceWakeuper@" + refId + "::setParameter(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.setParameter(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.VoiceWakeuper::getParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.VoiceWakeuper ref = (com.iflytek.cloud.VoiceWakeuper) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.VoiceWakeuper@" + refId + "::getParameter(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getParameter(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.VoiceWakeuper::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.VoiceWakeuper ref = (com.iflytek.cloud.VoiceWakeuper) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.VoiceWakeuper@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.iflytek.cloud.EvaluatorResult::getResultString", (args, methodResult) -> {
             // args
         
@@ -17021,6 +18384,100 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             methodResult.success("success");
         });
         // method
+        put("com.iflytek.cloud.SpeechUnderstander::setParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+            // jsonable arg
+            String var2 = (String) args.get("var2");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechUnderstander ref = (com.iflytek.cloud.SpeechUnderstander) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechUnderstander@" + refId + "::setParameter(" + var1 + var2 + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.setParameter(var1, var2);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.SpeechUnderstander::getParameter", (args, methodResult) -> {
+            // args
+            // jsonable arg
+            String var1 = (String) args.get("var1");
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechUnderstander ref = (com.iflytek.cloud.SpeechUnderstander) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechUnderstander@" + refId + "::getParameter(" + var1 + ")");
+            }
+        
+            // invoke native method
+            String result;
+            try {
+                result = ref.getParameter(var1);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.SpeechUnderstander::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.SpeechUnderstander ref = (com.iflytek.cloud.SpeechUnderstander) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.SpeechUnderstander@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
         put("com.iflytek.cloud.resource.Resource::getLanguage", (args, methodResult) -> {
             // args
         
@@ -17456,6 +18913,36 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
             String result;
             try {
                 result = ref.trackNV21(var1, var2, var3, var4, var5);
+            } catch (Throwable throwable) {
+                throwable.printStackTrace();
+                if (getEnableLog()) {
+                    Log.d("Current HEAP: ", getHEAP().toString());
+                }
+                methodResult.error(throwable.getMessage(), null, null);
+                return;
+            }
+        
+            // result
+            methodResult.success(result);
+        });
+        // method
+        put("com.iflytek.cloud.FaceDetector::destroy", (args, methodResult) -> {
+            // args
+        
+        
+            // ref
+            int refId = (int) args.get("refId");
+            com.iflytek.cloud.FaceDetector ref = (com.iflytek.cloud.FaceDetector) getHEAP().get(refId);
+        
+            // print log
+            if (getEnableLog()) {
+                Log.d("fluttify-java", "fluttify-java: com.iflytek.cloud.FaceDetector@" + refId + "::destroy(" + "" + ")");
+            }
+        
+            // invoke native method
+            boolean result;
+            try {
+                result = ref.destroy();
             } catch (Throwable throwable) {
                 throwable.printStackTrace();
                 if (getEnableLog()) {
