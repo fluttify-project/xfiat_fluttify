@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:xfiat_fluttify/xfiat_fluttify.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+
+  SpeechService.init('5de4a580');
+}
 
 class MyApp extends StatefulWidget {
   @override
