@@ -1,7 +1,5 @@
 import 'dart:typed_data';
-import 'dart:ui';
 
-import 'package:flutter/cupertino.dart';
 import 'package:xfiat_fluttify/src/android/android.export.g.dart';
 import 'package:xfiat_fluttify/src/ios/ios.export.g.dart';
 
@@ -19,25 +17,21 @@ class SpeechRecognizer {
 
   Future<void> setParameter(String key, String value) async {
     return platform(
-      android: (pool) async {
-        _androidModel.setParameter(key, value);
-      },
-      ios: (pool) async {
-        _iosModel.setParameterForKey(key, value);
-      },
+      android: (pool) => _androidModel.setParameter(key, value),
+      ios: (pool) => _iosModel.setParameterForKey(key, value),
     );
   }
 
   Future<void> start({
-    ValueChanged<int> onVolumeChanged,
-    ValueChanged<SpeechError> onError,
+    FutureValueChanged<int> onVolumeChanged,
+    FutureValueChanged<SpeechError> onError,
     OnResult onResult,
-    VoidCallback onBeginOfSpeech,
-    VoidCallback onEndOfSpeech,
+    FutureVoidCallback onBeginOfSpeech,
+    FutureVoidCallback onEndOfSpeech,
   }) async {
     return platform(
       android: (pool) async {
-        _androidModel.startListening(_AndroidListener(
+        await _androidModel.startListening(_AndroidListener(
           onVolumeChanged,
           onError,
           onResult,
@@ -46,14 +40,14 @@ class SpeechRecognizer {
         ));
       },
       ios: (pool) async {
-        _iosModel.set_delegate(_IOSListener(
+        await _iosModel.set_delegate(_IOSListener(
           onVolumeChanged,
           onError,
           onResult,
           onBeginOfSpeech,
           onEndOfSpeech,
         ));
-        _iosModel.startListening();
+        await _iosModel.startListening();
       },
     );
   }
@@ -61,11 +55,11 @@ class SpeechRecognizer {
 
 class _AndroidListener extends java_lang_Object
     with com_iflytek_cloud_RecognizerListener {
-  final ValueChanged<int> _onVolumeChanged;
-  final ValueChanged<SpeechError> _onError;
+  final FutureValueChanged<int> _onVolumeChanged;
+  final FutureValueChanged<SpeechError> _onError;
   final OnResult _onResult;
-  final VoidCallback _onBeginOfSpeech;
-  final VoidCallback _onEndOfSpeech;
+  final FutureVoidCallback _onBeginOfSpeech;
+  final FutureVoidCallback _onEndOfSpeech;
 
   _AndroidListener(
     this._onVolumeChanged,
@@ -79,7 +73,7 @@ class _AndroidListener extends java_lang_Object
   Future<void> onVolumeChanged(int var1, Uint8List var2) async {
     super.onVolumeChanged(var1, var2);
     if (_onVolumeChanged != null) {
-      _onVolumeChanged(var1);
+      await _onVolumeChanged(var1);
     }
   }
 
@@ -97,7 +91,7 @@ class _AndroidListener extends java_lang_Object
   Future<void> onError(com_iflytek_cloud_SpeechError var1) async {
     super.onError(var1);
     if (_onError != null) {
-      _onError(SpeechError.android(var1));
+      await _onError(SpeechError.android(var1));
     }
   }
 
@@ -108,7 +102,7 @@ class _AndroidListener extends java_lang_Object
   ) async {
     super.onResult(var1, var2);
     if (_onResult != null) {
-      _onResult(RecognizerResult.android(var1), var2);
+      await _onResult(RecognizerResult.android(var1), var2);
     }
   }
 
@@ -116,7 +110,7 @@ class _AndroidListener extends java_lang_Object
   Future<void> onEndOfSpeech() async {
     super.onEndOfSpeech();
     if (_onEndOfSpeech != null) {
-      _onEndOfSpeech();
+      await _onEndOfSpeech();
     }
   }
 
@@ -124,17 +118,17 @@ class _AndroidListener extends java_lang_Object
   Future<void> onBeginOfSpeech() async {
     super.onBeginOfSpeech();
     if (_onBeginOfSpeech != null) {
-      _onBeginOfSpeech();
+      await _onBeginOfSpeech();
     }
   }
 }
 
 class _IOSListener extends NSObject with IFlySpeechRecognizerDelegate {
-  final ValueChanged<int> _onVolumeChanged;
-  final ValueChanged<SpeechError> _onError;
+  final FutureValueChanged<int> _onVolumeChanged;
+  final FutureValueChanged<SpeechError> _onError;
   final OnResult _onResult;
-  final VoidCallback _onBeginOfSpeech;
-  final VoidCallback _onEndOfSpeech;
+  final FutureVoidCallback _onBeginOfSpeech;
+  final FutureVoidCallback _onEndOfSpeech;
 
   _IOSListener(
     this._onVolumeChanged,
@@ -148,7 +142,7 @@ class _IOSListener extends NSObject with IFlySpeechRecognizerDelegate {
   Future<void> onCompleted(IFlySpeechError errorCode) async {
     super.onCompleted(errorCode);
     if (_onError != null) {
-      _onError(SpeechError.ios(errorCode));
+      await _onError(SpeechError.ios(errorCode));
     }
   }
 
@@ -167,7 +161,7 @@ class _IOSListener extends NSObject with IFlySpeechRecognizerDelegate {
   Future<void> onEndOfSpeech() async {
     super.onEndOfSpeech();
     if (_onEndOfSpeech != null) {
-      _onEndOfSpeech();
+      await _onEndOfSpeech();
     }
   }
 
@@ -175,7 +169,7 @@ class _IOSListener extends NSObject with IFlySpeechRecognizerDelegate {
   Future<void> onBeginOfSpeech() async {
     super.onBeginOfSpeech();
     if (_onBeginOfSpeech != null) {
-      _onBeginOfSpeech();
+      await _onBeginOfSpeech();
     }
   }
 
@@ -183,7 +177,7 @@ class _IOSListener extends NSObject with IFlySpeechRecognizerDelegate {
   Future<void> onVolumeChanged(int volume) async {
     super.onVolumeChanged(volume);
     if (_onVolumeChanged != null) {
-      _onVolumeChanged(volume);
+      await _onVolumeChanged(volume);
     }
   }
 
@@ -191,7 +185,7 @@ class _IOSListener extends NSObject with IFlySpeechRecognizerDelegate {
   Future<void> onResultsIsLast(List<NSObject> results, bool isLast) async {
     super.onResultsIsLast(results, isLast);
     if (_onResult != null) {
-      _onResult(RecognizerResult.ios(results), isLast);
+      await _onResult(RecognizerResult.ios(results), isLast);
     }
   }
 }
