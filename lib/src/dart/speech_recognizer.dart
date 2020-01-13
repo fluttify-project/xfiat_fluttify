@@ -1,6 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:xfiat_fluttify/src/android/android.export.g.dart';
+import 'package:xfiat_fluttify/src/dart/options.dart';
 import 'package:xfiat_fluttify/src/ios/ios.export.g.dart';
 
 import 'models.dart';
@@ -21,6 +22,13 @@ class SpeechRecognizer {
       android: (pool) => _androidModel.setParameter(key, value),
       ios: (pool) => _iosModel.setParameterForKey(key, value),
     );
+  }
+
+  /// 批量赋值
+  Future<void> setParameters(Options _options) async {
+    return _options.toMap().forEach((key, value) async {
+      await setParameter(key, value);
+    });
   }
 
   /// 开始识别
@@ -104,7 +112,7 @@ class _AndroidListener extends java_lang_Object
   ) async {
     super.onResult(var1, var2);
     if (_onResult != null) {
-      await _onResult(RecognizerResult.android(var1), var2);
+      _onResult(RecognizerResult.android(var1), var2);
     }
   }
 

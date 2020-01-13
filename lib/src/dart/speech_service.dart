@@ -1,32 +1,49 @@
-import 'package:xfiat_fluttify/src/android/android.export.g.dart';
-import 'package:xfiat_fluttify/src/ios/ios.export.g.dart';
+part of "../../xfiat_fluttify.dart";
 
-import 'speech_recognizer.dart';
-
+///
+/// 科大讯飞语音听写服务入口
+///
 class SpeechService {
-  SpeechService._();
-
+  /// 传入的appid
+  final AppID appID;
+  
+  SpeechService({@required this.appID}) {
+    this.init();
+  }
+  
+  ///
   /// 初始化
-  static Future<void> init(String appId) async {
+  ///
+  Future<void> init() async {
     return platform(
       android: (pool) async {
         final context = await android_app_Application.get();
         await com_iflytek_cloud_SpeechUtility.createUtility(
-            context, com_iflytek_cloud_SpeechConstant.APPID + '=$appId');
-      },
+          context,
+          // 申请地址：http://www.xfyun.cn
+          com_iflytek_cloud_SpeechConstant.APPID + '=' + this.appID.toString(),
+        );
+      }, // android 平台处理
       ios: (pool) async {
-        await IFlySpeechUtility.createUtility('appid=$appId');
-      },
+        await IFlySpeechUtility.createUtility(
+          'appid' '=' + this.appID.toString(),
+        );
+      }, // ios 平台处理
     );
   }
-
+  
+  ///
   /// 创建识别器
-  static Future<SpeechRecognizer> createRecognizer() async {
+  ///
+  static Future<SpeechRecognizer> createRecognizer(Options options) async {
     return platform(
       android: (pool) async {
         final context = await android_app_Application.get();
-        final recognizer = await com_iflytek_cloud_SpeechRecognizer
-            .createRecognizer(context, _AndroidListener());
+        final recognizer =
+        await com_iflytek_cloud_SpeechRecognizer.createRecognizer(
+          context,
+          _AndroidListener(),
+        );
         return SpeechRecognizer.android(recognizer);
       },
       ios: (pool) async {
