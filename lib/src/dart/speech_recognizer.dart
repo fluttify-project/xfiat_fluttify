@@ -8,6 +8,9 @@ import 'models.dart';
 
 typedef void OnResult(RecognizerResult var1, bool var2);
 
+///
+/// 识别器
+///
 class SpeechRecognizer {
   final com_iflytek_cloud_SpeechRecognizer _androidModel;
   final IFlySpeechRecognizer _iosModel;
@@ -26,37 +29,43 @@ class SpeechRecognizer {
 
   /// 批量赋值
   Future<void> setParameters(Options _options) async {
-    return _options.toMap().forEach((key, value) async {
-      await setParameter(key, value);
+    if (_options == null) _options = Options();
+  
+    _options.toMap().forEach((key, value) async {
+      await this.setParameter(key, value);
     });
   }
 
   /// 开始识别
   Future<void> start({
-    FutureValueChanged<int> onVolumeChanged,
-    FutureValueChanged<SpeechError> onError,
-    OnResult onResult,
-    FutureVoidCallback onBeginOfSpeech,
-    FutureVoidCallback onEndOfSpeech,
+    FutureValueChanged<int> onVolumeChanged, // 调整音量
+    FutureValueChanged<SpeechError> onError, // 报错
+    OnResult onResult, // 返回结果
+    FutureVoidCallback onBeginOfSpeech, // 开始说话
+    FutureVoidCallback onEndOfSpeech, // 结束说话
   }) async {
     return platform(
       android: (pool) async {
-        await _androidModel.startListening(_AndroidListener(
-          onVolumeChanged,
-          onError,
-          onResult,
-          onBeginOfSpeech,
-          onEndOfSpeech,
-        ));
+        await _androidModel.startListening(
+          _AndroidListener(
+            onVolumeChanged,
+            onError,
+            onResult,
+            onBeginOfSpeech,
+            onEndOfSpeech,
+          ),
+        );
       },
       ios: (pool) async {
-        await _iosModel.set_delegate(_IOSListener(
-          onVolumeChanged,
-          onError,
-          onResult,
-          onBeginOfSpeech,
-          onEndOfSpeech,
-        ));
+        await _iosModel.set_delegate(
+          _IOSListener(
+            onVolumeChanged,
+            onError,
+            onResult,
+            onBeginOfSpeech,
+            onEndOfSpeech,
+          ),
+        );
         await _iosModel.startListening();
       },
     );

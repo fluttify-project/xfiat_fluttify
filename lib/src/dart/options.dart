@@ -55,9 +55,9 @@ class Options {
         "language": language(this.inputLanguage),
         "accept": "mandarin",
         "vad_bos":
-            !this.vadBos.isEmpty ? this.vadBos.toString() : 5000.toString(),
+        this.vadBos != null ? this.vadBos.toString() : 5000.toString(),
         "vad_eos":
-            !this.vadEos.isEmpty ? this.vadEos.toString() : 1800.toString(),
+        this.vadEos != null ? this.vadEos.toString() : 1800.toString(),
         "sample_rate": rate(this.sampleRate),
         "nunum": (this.nunum ? 1 : 0).toString(),
         "ptt": (this.chinesePtt ? 1 : 0).toString(),

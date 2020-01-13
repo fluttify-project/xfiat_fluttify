@@ -15,5 +15,4 @@ class VadTime {
 
   int toInt() => this.vad.toInt();
 
-  bool get isEmpty => this.vad == null;
 }

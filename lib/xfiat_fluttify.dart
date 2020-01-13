@@ -9,8 +9,9 @@ import './src/dart/types/appid.dart';
 import './src/ios/IFlySpeechUtility.g.dart';
 import './src/ios/ios.export.g.dart';
 
+export './src/dart/models.dart';
 export './src/dart/options.dart';
-export './src/dart/speech_recognizer.dart'; // ? 有必要导出么
+export './src/dart/speech_recognizer.dart';
 export './src/dart/types/appid.dart';
 export './xfiat_fluttify.dart';
 
