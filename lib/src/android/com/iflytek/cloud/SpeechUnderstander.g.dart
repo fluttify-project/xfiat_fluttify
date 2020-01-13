@@ -265,5 +265,71 @@ class com_iflytek_cloud_SpeechUnderstander extends java_lang_Object  {
     }
   }
   
+  Future<bool> setParameter(String var1, String var2) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.iflytek.cloud.SpeechUnderstander@$refId::setParameter([\'var1\':$var1, \'var2\':$var2])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.SpeechUnderstander::setParameter', {"var1": var1, "var2": var2, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<String> getParameter(String var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.iflytek.cloud.SpeechUnderstander@$refId::getParameter([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.SpeechUnderstander::getParameter', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<bool> destroy() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.iflytek.cloud.SpeechUnderstander@$refId::destroy([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.SpeechUnderstander::destroy', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   //endregion
 }

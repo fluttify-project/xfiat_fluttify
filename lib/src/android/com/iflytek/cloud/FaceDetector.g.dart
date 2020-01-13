@@ -138,5 +138,27 @@ class com_iflytek_cloud_FaceDetector extends java_lang_Object  {
     }
   }
   
+  Future<bool> destroy() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.iflytek.cloud.FaceDetector@$refId::destroy([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.FaceDetector::destroy', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   //endregion
 }

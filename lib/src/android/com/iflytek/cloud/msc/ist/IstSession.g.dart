@@ -35,6 +35,28 @@ class com_iflytek_cloud_msc_ist_IstSession extends java_lang_Object  {
   //endregion
 
   //region methods
+  Future<void> sessionEnd(String var1) async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.iflytek.cloud.msc.ist.IstSession@$refId::sessionEnd([\'var1\':$var1])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.msc.ist.IstSession::sessionEnd', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<void> pushAudioData(Uint8List var1, int var2) async {
     // print log
     if (fluttifyLogEnabled) {

@@ -130,6 +130,28 @@ class com_iflytek_cloud_speech_impl_SpeechSynthesizerImpl extends java_lang_Obje
     }
   }
   
+  Future<void> onBufferReady() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.iflytek.cloud.speech.impl.SpeechSynthesizerImpl@$refId::onBufferReady([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.SpeechSynthesizerImpl::onBufferReady', {"refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
   Future<int> synthesizeToUri(String var1, String var2, com_iflytek_cloud_SynthesizerListener var3) async {
     // print log
     if (fluttifyLogEnabled) {
@@ -387,6 +409,28 @@ class com_iflytek_cloud_speech_impl_SpeechSynthesizerImpl extends java_lang_Obje
   
     // invoke native method
     final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.SpeechSynthesizerImpl::getUpflowBytes', {"var1": var1, "refId": refId});
+  
+  
+    // handle native call
+  
+  
+    // convert native result to dart side object
+    if (result == null) {
+      return null;
+    } else {
+    
+      return result;
+    }
+  }
+  
+  Future<bool> destroy() async {
+    // print log
+    if (fluttifyLogEnabled) {
+      print('fluttify-dart: com.iflytek.cloud.speech.impl.SpeechSynthesizerImpl@$refId::destroy([])');
+    }
+  
+    // invoke native method
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.SpeechSynthesizerImpl::destroy', {"refId": refId});
   
   
     // handle native call
