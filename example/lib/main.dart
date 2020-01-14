@@ -18,11 +18,11 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   SpeechRecognizer _speechRecognizer;
-  
+
   @override
   void initState() {
     super.initState();
-    
+
     /// 初始化识别无UI识别对象
     SpeechService.createRecognizer(options: Options()).then((speechRecognizer) {
       setState(() {
@@ -30,7 +30,7 @@ class _MyAppState extends State<MyApp> {
       });
     });
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -45,8 +45,13 @@ class _MyAppState extends State<MyApp> {
           child: Listener(
             child: Icon(Icons.mic),
             onPointerDown: (PointerDownEvent event) {
+              if (this._speechRecognizer == null) return;
+  
               print('监听到按钮按下的事件');
               this._speechRecognizer.start(
+                onVolumeChanged: (int volume) async {
+                  print('音量现在是' + volume.toString());
+                },
                 onBeginOfSpeech: () async {
                   print('开始了');
                 },
@@ -58,6 +63,7 @@ class _MyAppState extends State<MyApp> {
                   print(error);
                 },
                 onResult: (RecognizerResult result, bool isSuccess) {
+                  print('成功了');
                   print(isSuccess);
                   print(result);
                 },
