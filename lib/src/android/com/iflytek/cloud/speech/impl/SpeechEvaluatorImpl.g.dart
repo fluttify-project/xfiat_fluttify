@@ -42,11 +42,75 @@ class com_iflytek_cloud_speech_impl_SpeechEvaluatorImpl extends java_lang_Object
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.SpeechEvaluatorImpl::startEvaluating__String__String__com_iflytek_cloud_EvaluatorListener', {"var1": var1, "var2": var2, "var3": var3.refId, "refId": refId});
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.SpeechEvaluatorImpl::startEvaluating__String__String__com_iflytek_cloud_EvaluatorListener', {"var1": var1, "var2": var2, "refId": refId});
   
   
     // handle native call
+    MethodChannel('com.iflytek.cloud.speech.impl.SpeechEvaluatorImpl::startEvaluating__String__String__com_iflytek_cloud_EvaluatorListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'Callback::com.iflytek.cloud.EvaluatorListener::onVolumeChanged':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onVolumeChanged([\'var1\':$args[var1], \'var2\':$args[var2]])');
+              }
+        
+              // handle the native call
+              var3?.onVolumeChanged(args['var1'], args['var2']);
+              break;
+            case 'Callback::com.iflytek.cloud.EvaluatorListener::onBeginOfSpeech':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onBeginOfSpeech([])');
+              }
+        
+              // handle the native call
+              var3?.onBeginOfSpeech();
+              break;
+            case 'Callback::com.iflytek.cloud.EvaluatorListener::onEndOfSpeech':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onEndOfSpeech([])');
+              }
+        
+              // handle the native call
+              var3?.onEndOfSpeech();
+              break;
+            case 'Callback::com.iflytek.cloud.EvaluatorListener::onResult':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onResult([\'var2\':$args[var2]])');
+              }
+        
+              // handle the native call
+              var3?.onResult(com_iflytek_cloud_EvaluatorResult()..refId = (args['var1'])..tag = 'xfiat_fluttify', args['var2']);
+              break;
+            case 'Callback::com.iflytek.cloud.EvaluatorListener::onError':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onError([])');
+              }
+        
+              // handle the native call
+              var3?.onError(com_iflytek_cloud_SpeechError()..refId = (args['var1'])..tag = 'xfiat_fluttify');
+              break;
+            case 'Callback::com.iflytek.cloud.EvaluatorListener::onEvent':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onEvent([\'var1\':$args[var1], \'var2\':$args[var2], \'var3\':$args[var3]])');
+              }
+        
+              // handle the native call
+              var3?.onEvent(args['var1'], args['var2'], args['var3'], android_os_Bundle()..refId = (args['var4'])..tag = 'xfiat_fluttify');
+              break;
+            default:
+              break;
+          }
+        });
   
     // convert native result to dart side object
     if (result == null) {
@@ -64,11 +128,75 @@ class com_iflytek_cloud_speech_impl_SpeechEvaluatorImpl extends java_lang_Object
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.SpeechEvaluatorImpl::startEvaluating__Uint8List__String__com_iflytek_cloud_EvaluatorListener', {"var1": var1, "var2": var2, "var3": var3.refId, "refId": refId});
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.SpeechEvaluatorImpl::startEvaluating__Uint8List__String__com_iflytek_cloud_EvaluatorListener', {"var1": var1, "var2": var2, "refId": refId});
   
   
     // handle native call
+    MethodChannel('com.iflytek.cloud.speech.impl.SpeechEvaluatorImpl::startEvaluating__Uint8List__String__com_iflytek_cloud_EvaluatorListener::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'Callback::com.iflytek.cloud.EvaluatorListener::onVolumeChanged':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onVolumeChanged([\'var1\':$args[var1], \'var2\':$args[var2]])');
+              }
+        
+              // handle the native call
+              var3?.onVolumeChanged(args['var1'], args['var2']);
+              break;
+            case 'Callback::com.iflytek.cloud.EvaluatorListener::onBeginOfSpeech':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onBeginOfSpeech([])');
+              }
+        
+              // handle the native call
+              var3?.onBeginOfSpeech();
+              break;
+            case 'Callback::com.iflytek.cloud.EvaluatorListener::onEndOfSpeech':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onEndOfSpeech([])');
+              }
+        
+              // handle the native call
+              var3?.onEndOfSpeech();
+              break;
+            case 'Callback::com.iflytek.cloud.EvaluatorListener::onResult':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onResult([\'var2\':$args[var2]])');
+              }
+        
+              // handle the native call
+              var3?.onResult(com_iflytek_cloud_EvaluatorResult()..refId = (args['var1'])..tag = 'xfiat_fluttify', args['var2']);
+              break;
+            case 'Callback::com.iflytek.cloud.EvaluatorListener::onError':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onError([])');
+              }
+        
+              // handle the native call
+              var3?.onError(com_iflytek_cloud_SpeechError()..refId = (args['var1'])..tag = 'xfiat_fluttify');
+              break;
+            case 'Callback::com.iflytek.cloud.EvaluatorListener::onEvent':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onEvent([\'var1\':$args[var1], \'var2\':$args[var2], \'var3\':$args[var3]])');
+              }
+        
+              // handle the native call
+              var3?.onEvent(args['var1'], args['var2'], args['var3'], android_os_Bundle()..refId = (args['var4'])..tag = 'xfiat_fluttify');
+              break;
+            default:
+              break;
+          }
+        });
   
     // convert native result to dart side object
     if (result == null) {

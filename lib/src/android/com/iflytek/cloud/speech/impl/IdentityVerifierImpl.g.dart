@@ -64,11 +64,48 @@ class com_iflytek_cloud_speech_impl_IdentityVerifierImpl extends java_lang_Objec
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.IdentityVerifierImpl::startWorking', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.IdentityVerifierImpl::startWorking', {"refId": refId});
   
   
     // handle native call
+    MethodChannel('com.iflytek.cloud.speech.impl.IdentityVerifierImpl::startWorking::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'Callback::com.iflytek.cloud.IdentityListener::onResult':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onResult([\'var2\':$args[var2]])');
+              }
+        
+              // handle the native call
+              var1?.onResult(com_iflytek_cloud_IdentityResult()..refId = (args['var1'])..tag = 'xfiat_fluttify', args['var2']);
+              break;
+            case 'Callback::com.iflytek.cloud.IdentityListener::onError':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onError([])');
+              }
+        
+              // handle the native call
+              var1?.onError(com_iflytek_cloud_SpeechError()..refId = (args['var1'])..tag = 'xfiat_fluttify');
+              break;
+            case 'Callback::com.iflytek.cloud.IdentityListener::onEvent':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onEvent([\'var1\':$args[var1], \'var2\':$args[var2], \'var3\':$args[var3]])');
+              }
+        
+              // handle the native call
+              var1?.onEvent(args['var1'], args['var2'], args['var3'], android_os_Bundle()..refId = (args['var4'])..tag = 'xfiat_fluttify');
+              break;
+            default:
+              break;
+          }
+        });
   
     // convert native result to dart side object
     if (result == null) {
@@ -130,11 +167,48 @@ class com_iflytek_cloud_speech_impl_IdentityVerifierImpl extends java_lang_Objec
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.IdentityVerifierImpl::execute', {"var1": var1, "var2": var2, "var3": var3, "var4": var4.refId, "refId": refId});
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.IdentityVerifierImpl::execute', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
   
   
     // handle native call
+    MethodChannel('com.iflytek.cloud.speech.impl.IdentityVerifierImpl::execute::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'Callback::com.iflytek.cloud.IdentityListener::onResult':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onResult([\'var2\':$args[var2]])');
+              }
+        
+              // handle the native call
+              var4?.onResult(com_iflytek_cloud_IdentityResult()..refId = (args['var1'])..tag = 'xfiat_fluttify', args['var2']);
+              break;
+            case 'Callback::com.iflytek.cloud.IdentityListener::onError':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onError([])');
+              }
+        
+              // handle the native call
+              var4?.onError(com_iflytek_cloud_SpeechError()..refId = (args['var1'])..tag = 'xfiat_fluttify');
+              break;
+            case 'Callback::com.iflytek.cloud.IdentityListener::onEvent':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onEvent([\'var1\':$args[var1], \'var2\':$args[var2], \'var3\':$args[var3]])');
+              }
+        
+              // handle the native call
+              var4?.onEvent(args['var1'], args['var2'], args['var3'], android_os_Bundle()..refId = (args['var4'])..tag = 'xfiat_fluttify');
+              break;
+            default:
+              break;
+          }
+        });
   
     // convert native result to dart side object
     if (result == null) {

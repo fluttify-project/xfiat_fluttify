@@ -57,11 +57,48 @@ class com_iflytek_cloud_msc_util_FileDownloader extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.msc.util.FileDownloader::startDownload', {"var1": var1, "var2": var2, "var3": var3, "var4": var4.refId, "refId": refId});
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.msc.util.FileDownloader::startDownload', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
   
   
     // handle native call
+    MethodChannel('com.iflytek.cloud.msc.util.FileDownloader::startDownload::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'Callback::com.iflytek.cloud.util.FileDownloadListener::onStart':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onStart([])');
+              }
+        
+              // handle the native call
+              var4?.onStart();
+              break;
+            case 'Callback::com.iflytek.cloud.util.FileDownloadListener::onProgress':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onProgress([\'var1\':$args[var1]])');
+              }
+        
+              // handle the native call
+              var4?.onProgress(args['var1']);
+              break;
+            case 'Callback::com.iflytek.cloud.util.FileDownloadListener::onCompleted':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onCompleted([\'var1\':$args[var1]])');
+              }
+        
+              // handle the native call
+              var4?.onCompleted(args['var1'], com_iflytek_cloud_SpeechError()..refId = (args['var2'])..tag = 'xfiat_fluttify');
+              break;
+            default:
+              break;
+          }
+        });
   
     // convert native result to dart side object
     if (result == null) {

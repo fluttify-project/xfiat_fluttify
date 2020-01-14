@@ -19,7 +19,7 @@ mixin com_iflytek_cloud_LexiconListener on java_lang_Object {
 
   @mustCallSuper
   Future<void> onLexiconUpdated(String var1, com_iflytek_cloud_SpeechError var2) {
-  
+    kNativeObjectPool.add(var2);
   
     if (fluttifyLogEnabled) {
       debugPrint('onLexiconUpdated::kNativeObjectPool: $kNativeObjectPool');

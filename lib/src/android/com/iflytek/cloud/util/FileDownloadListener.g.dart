@@ -37,7 +37,7 @@ mixin com_iflytek_cloud_util_FileDownloadListener on java_lang_Object {
   
   @mustCallSuper
   Future<void> onCompleted(String var1, com_iflytek_cloud_SpeechError var2) {
-  
+    kNativeObjectPool.add(var2);
   
     if (fluttifyLogEnabled) {
       debugPrint('onCompleted::kNativeObjectPool: $kNativeObjectPool');

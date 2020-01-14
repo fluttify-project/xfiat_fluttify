@@ -19,7 +19,7 @@ mixin com_iflytek_cloud_GrammarListener on java_lang_Object {
 
   @mustCallSuper
   Future<void> onBuildFinish(String var1, com_iflytek_cloud_SpeechError var2) {
-  
+    kNativeObjectPool.add(var2);
   
     if (fluttifyLogEnabled) {
       debugPrint('onBuildFinish::kNativeObjectPool: $kNativeObjectPool');

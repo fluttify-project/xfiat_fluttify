@@ -28,7 +28,7 @@ mixin com_iflytek_cloud_WakeuperListener on java_lang_Object {
   
   @mustCallSuper
   Future<void> onResult(com_iflytek_cloud_WakeuperResult var1) {
-  
+    kNativeObjectPool.add(var1);
   
     if (fluttifyLogEnabled) {
       debugPrint('onResult::kNativeObjectPool: $kNativeObjectPool');
@@ -37,7 +37,7 @@ mixin com_iflytek_cloud_WakeuperListener on java_lang_Object {
   
   @mustCallSuper
   Future<void> onError(com_iflytek_cloud_SpeechError var1) {
-  
+    kNativeObjectPool.add(var1);
   
     if (fluttifyLogEnabled) {
       debugPrint('onError::kNativeObjectPool: $kNativeObjectPool');
@@ -46,7 +46,7 @@ mixin com_iflytek_cloud_WakeuperListener on java_lang_Object {
   
   @mustCallSuper
   Future<void> onEvent(int var1, int var2, int var3, android_os_Bundle var4) {
-  
+    kNativeObjectPool.add(var4);
   
     if (fluttifyLogEnabled) {
       debugPrint('onEvent::kNativeObjectPool: $kNativeObjectPool');

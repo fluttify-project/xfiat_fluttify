@@ -42,11 +42,48 @@ class com_iflytek_cloud_DataDownloader extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.DataDownloader::downloadData', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.DataDownloader::downloadData', {"refId": refId});
   
   
     // handle native call
+    MethodChannel('com.iflytek.cloud.DataDownloader::downloadData::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'Callback::com.iflytek.cloud.SpeechListener::onEvent':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onEvent([\'var1\':$args[var1]])');
+              }
+        
+              // handle the native call
+              var1?.onEvent(args['var1'], android_os_Bundle()..refId = (args['var2'])..tag = 'xfiat_fluttify');
+              break;
+            case 'Callback::com.iflytek.cloud.SpeechListener::onBufferReceived':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onBufferReceived([\'var1\':$args[var1]])');
+              }
+        
+              // handle the native call
+              var1?.onBufferReceived(args['var1']);
+              break;
+            case 'Callback::com.iflytek.cloud.SpeechListener::onCompleted':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onCompleted([])');
+              }
+        
+              // handle the native call
+              var1?.onCompleted(com_iflytek_cloud_SpeechError()..refId = (args['var1'])..tag = 'xfiat_fluttify');
+              break;
+            default:
+              break;
+          }
+        });
   
     // convert native result to dart side object
     if (result == null) {

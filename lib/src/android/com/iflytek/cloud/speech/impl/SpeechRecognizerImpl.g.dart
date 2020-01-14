@@ -64,11 +64,75 @@ class com_iflytek_cloud_speech_impl_SpeechRecognizerImpl extends java_lang_Objec
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.SpeechRecognizerImpl::startListening', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.SpeechRecognizerImpl::startListening', {"refId": refId});
   
   
     // handle native call
+    MethodChannel('com.iflytek.cloud.speech.impl.SpeechRecognizerImpl::startListening::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'Callback::com.iflytek.cloud.RecognizerListener::onVolumeChanged':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onVolumeChanged([\'var1\':$args[var1], \'var2\':$args[var2]])');
+              }
+        
+              // handle the native call
+              var1?.onVolumeChanged(args['var1'], args['var2']);
+              break;
+            case 'Callback::com.iflytek.cloud.RecognizerListener::onBeginOfSpeech':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onBeginOfSpeech([])');
+              }
+        
+              // handle the native call
+              var1?.onBeginOfSpeech();
+              break;
+            case 'Callback::com.iflytek.cloud.RecognizerListener::onEndOfSpeech':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onEndOfSpeech([])');
+              }
+        
+              // handle the native call
+              var1?.onEndOfSpeech();
+              break;
+            case 'Callback::com.iflytek.cloud.RecognizerListener::onResult':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onResult([\'var2\':$args[var2]])');
+              }
+        
+              // handle the native call
+              var1?.onResult(com_iflytek_cloud_RecognizerResult()..refId = (args['var1'])..tag = 'xfiat_fluttify', args['var2']);
+              break;
+            case 'Callback::com.iflytek.cloud.RecognizerListener::onError':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onError([])');
+              }
+        
+              // handle the native call
+              var1?.onError(com_iflytek_cloud_SpeechError()..refId = (args['var1'])..tag = 'xfiat_fluttify');
+              break;
+            case 'Callback::com.iflytek.cloud.RecognizerListener::onEvent':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onEvent([\'var1\':$args[var1], \'var2\':$args[var2], \'var3\':$args[var3]])');
+              }
+        
+              // handle the native call
+              var1?.onEvent(args['var1'], args['var2'], args['var3'], android_os_Bundle()..refId = (args['var4'])..tag = 'xfiat_fluttify');
+              break;
+            default:
+              break;
+          }
+        });
   
     // convert native result to dart side object
     if (result == null) {
@@ -174,11 +238,30 @@ class com_iflytek_cloud_speech_impl_SpeechRecognizerImpl extends java_lang_Objec
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.SpeechRecognizerImpl::buildGrammar', {"var1": var1, "var2": var2, "var3": var3.refId, "refId": refId});
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.SpeechRecognizerImpl::buildGrammar', {"var1": var1, "var2": var2, "refId": refId});
   
   
     // handle native call
+    MethodChannel('com.iflytek.cloud.speech.impl.SpeechRecognizerImpl::buildGrammar::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'Callback::com.iflytek.cloud.GrammarListener::onBuildFinish':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onBuildFinish([\'var1\':$args[var1]])');
+              }
+        
+              // handle the native call
+              var3?.onBuildFinish(args['var1'], com_iflytek_cloud_SpeechError()..refId = (args['var2'])..tag = 'xfiat_fluttify');
+              break;
+            default:
+              break;
+          }
+        });
   
     // convert native result to dart side object
     if (result == null) {
@@ -196,11 +279,30 @@ class com_iflytek_cloud_speech_impl_SpeechRecognizerImpl extends java_lang_Objec
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.SpeechRecognizerImpl::updateLexicon', {"var1": var1, "var2": var2, "var3": var3.refId, "refId": refId});
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.speech.impl.SpeechRecognizerImpl::updateLexicon', {"var1": var1, "var2": var2, "refId": refId});
   
   
     // handle native call
+    MethodChannel('com.iflytek.cloud.speech.impl.SpeechRecognizerImpl::updateLexicon::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'Callback::com.iflytek.cloud.LexiconListener::onLexiconUpdated':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onLexiconUpdated([\'var1\':$args[var1]])');
+              }
+        
+              // handle the native call
+              var3?.onLexiconUpdated(args['var1'], com_iflytek_cloud_SpeechError()..refId = (args['var2'])..tag = 'xfiat_fluttify');
+              break;
+            default:
+              break;
+          }
+        });
   
     // convert native result to dart side object
     if (result == null) {

@@ -98,11 +98,48 @@ class com_iflytek_cloud_VoiceWakeuper extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.VoiceWakeuper::queryResource', {"var1": var1, "var2": var2.refId, "refId": refId});
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.VoiceWakeuper::queryResource', {"var1": var1, "refId": refId});
   
   
     // handle native call
+    MethodChannel('com.iflytek.cloud.VoiceWakeuper::queryResource::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'Callback::com.iflytek.cloud.RequestListener::onEvent':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onEvent([\'var1\':$args[var1]])');
+              }
+        
+              // handle the native call
+              var2?.onEvent(args['var1'], android_os_Bundle()..refId = (args['var2'])..tag = 'xfiat_fluttify');
+              break;
+            case 'Callback::com.iflytek.cloud.RequestListener::onBufferReceived':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onBufferReceived([\'var1\':$args[var1]])');
+              }
+        
+              // handle the native call
+              var2?.onBufferReceived(args['var1']);
+              break;
+            case 'Callback::com.iflytek.cloud.RequestListener::onCompleted':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onCompleted([])');
+              }
+        
+              // handle the native call
+              var2?.onCompleted(com_iflytek_cloud_SpeechError()..refId = (args['var1'])..tag = 'xfiat_fluttify');
+              break;
+            default:
+              break;
+          }
+        });
   
     // convert native result to dart side object
     if (result == null) {
@@ -120,11 +157,48 @@ class com_iflytek_cloud_VoiceWakeuper extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.VoiceWakeuper::downloadResource', {"var1": var1, "var2": var2, "var3": var3, "var4": var4.refId, "refId": refId});
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.VoiceWakeuper::downloadResource', {"var1": var1, "var2": var2, "var3": var3, "refId": refId});
   
   
     // handle native call
+    MethodChannel('com.iflytek.cloud.VoiceWakeuper::downloadResource::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'Callback::com.iflytek.cloud.util.FileDownloadListener::onStart':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onStart([])');
+              }
+        
+              // handle the native call
+              var4?.onStart();
+              break;
+            case 'Callback::com.iflytek.cloud.util.FileDownloadListener::onProgress':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onProgress([\'var1\':$args[var1]])');
+              }
+        
+              // handle the native call
+              var4?.onProgress(args['var1']);
+              break;
+            case 'Callback::com.iflytek.cloud.util.FileDownloadListener::onCompleted':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onCompleted([\'var1\':$args[var1]])');
+              }
+        
+              // handle the native call
+              var4?.onCompleted(args['var1'], com_iflytek_cloud_SpeechError()..refId = (args['var2'])..tag = 'xfiat_fluttify');
+              break;
+            default:
+              break;
+          }
+        });
   
     // convert native result to dart side object
     if (result == null) {
@@ -142,11 +216,66 @@ class com_iflytek_cloud_VoiceWakeuper extends java_lang_Object  {
     }
   
     // invoke native method
-    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.VoiceWakeuper::startListening', {"var1": var1.refId, "refId": refId});
+    final result = await MethodChannel('com.fluttify/xfiat_fluttify').invokeMethod('com.iflytek.cloud.VoiceWakeuper::startListening', {"refId": refId});
   
   
     // handle native call
+    MethodChannel('com.iflytek.cloud.VoiceWakeuper::startListening::Callback')
+        .setMethodCallHandler((methodCall) async {
+          final args = methodCall.arguments as Map;
+          // final refId = args['callerRefId'] as int;
+          // if (refId != this.refId) return;
   
+          switch (methodCall.method) {
+            case 'Callback::com.iflytek.cloud.WakeuperListener::onBeginOfSpeech':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onBeginOfSpeech([])');
+              }
+        
+              // handle the native call
+              var1?.onBeginOfSpeech();
+              break;
+            case 'Callback::com.iflytek.cloud.WakeuperListener::onResult':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onResult([])');
+              }
+        
+              // handle the native call
+              var1?.onResult(com_iflytek_cloud_WakeuperResult()..refId = (args['var1'])..tag = 'xfiat_fluttify');
+              break;
+            case 'Callback::com.iflytek.cloud.WakeuperListener::onError':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onError([])');
+              }
+        
+              // handle the native call
+              var1?.onError(com_iflytek_cloud_SpeechError()..refId = (args['var1'])..tag = 'xfiat_fluttify');
+              break;
+            case 'Callback::com.iflytek.cloud.WakeuperListener::onEvent':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onEvent([\'var1\':$args[var1], \'var2\':$args[var2], \'var3\':$args[var3]])');
+              }
+        
+              // handle the native call
+              var1?.onEvent(args['var1'], args['var2'], args['var3'], android_os_Bundle()..refId = (args['var4'])..tag = 'xfiat_fluttify');
+              break;
+            case 'Callback::com.iflytek.cloud.WakeuperListener::onVolumeChanged':
+              // print log
+              if (fluttifyLogEnabled) {
+                print('fluttify-dart-callback: onVolumeChanged([\'var1\':$args[var1]])');
+              }
+        
+              // handle the native call
+              var1?.onVolumeChanged(args['var1']);
+              break;
+            default:
+              break;
+          }
+        });
   
     // convert native result to dart side object
     if (result == null) {

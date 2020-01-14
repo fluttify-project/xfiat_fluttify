@@ -19,7 +19,7 @@ mixin com_iflytek_cloud_RequestListener on java_lang_Object {
 
   @mustCallSuper
   Future<void> onEvent(int var1, android_os_Bundle var2) {
-  
+    kNativeObjectPool.add(var2);
   
     if (fluttifyLogEnabled) {
       debugPrint('onEvent::kNativeObjectPool: $kNativeObjectPool');
@@ -37,7 +37,7 @@ mixin com_iflytek_cloud_RequestListener on java_lang_Object {
   
   @mustCallSuper
   Future<void> onCompleted(com_iflytek_cloud_SpeechError var1) {
-  
+    kNativeObjectPool.add(var1);
   
     if (fluttifyLogEnabled) {
       debugPrint('onCompleted::kNativeObjectPool: $kNativeObjectPool');
