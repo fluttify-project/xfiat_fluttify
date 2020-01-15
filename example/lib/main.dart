@@ -19,6 +19,9 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   SpeechRecognizer _speechRecognizer;
 
+  // int _speechState = 0;
+  String _content = "";
+
   @override
   void initState() {
     super.initState();
@@ -29,6 +32,7 @@ class _MyAppState extends State<MyApp> {
         this._speechRecognizer = speechRecognizer;
       });
     });
+
   }
 
   @override
@@ -39,27 +43,44 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Xfiat Fluttify Example APP'),
         ),
         body: Center(
-          child: Text('Running on: \n' + Platform.operatingSystem),
+	        child: Text('Running on: \n' + Platform.operatingSystem + '\n' +
+			        this._content),
         ),
         floatingActionButton: FloatingActionButton(
           child: Listener(
             child: Icon(Icons.mic),
-            onPointerDown: (PointerDownEvent event) {
+	          onPointerDown: (PointerDownEvent event) async {
               if (this._speechRecognizer == null) return;
-  
-              print('监听到按钮按下的事件');
+
+              await this._speechRecognizer.requestPermission();
+
+              setState(() {
+	              this._content = '监听到按钮按下的事件';
+              });
+              
               this._speechRecognizer.start(
                 onVolumeChanged: (int volume) async {
-                  print('音量现在是' + volume.toString());
+	                setState(() {
+		                this._content = '音量现在是' + volume.toString();
+	                });
                 },
                 onBeginOfSpeech: () async {
-                  print('开始了');
+	                print('开始识别');
+	                setState(() {
+		                this._content = '开始识别';
+	                });
                 },
                 onEndOfSpeech: () async {
-                  print('结束了');
+	                print('识别结束');
+	                setState(() {
+		                this._content = '识别结束';
+	                });
                 },
                 onError: (SpeechError error) async {
-                  print('报错了');
+	                print('识别出错');
+	                setState(() {
+		                this._content = '识别出错';
+	                });
                   print(error);
                 },
                 onResult: (RecognizerResult result, bool isSuccess) {

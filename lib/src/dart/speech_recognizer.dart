@@ -1,10 +1,11 @@
 import 'dart:typed_data';
 
+import 'package:permission_handler/permission_handler.dart';
 import 'package:xfiat_fluttify/src/android/android.export.g.dart';
 import 'package:xfiat_fluttify/src/dart/options.dart';
 import 'package:xfiat_fluttify/src/ios/ios.export.g.dart';
 
-import 'models.dart';
+import './models.dart';
 
 typedef void OnResult(RecognizerResult var1, bool var2);
 
@@ -30,10 +31,26 @@ class SpeechRecognizer {
   /// 批量赋值
   Future<void> setParameters(Options _options) async {
     if (_options == null) _options = Options();
-  
+
     _options.toMap().forEach((key, value) async {
       await this.setParameter(key, value);
     });
+  }
+
+  Future requestPermission() async {
+    // 申请权限
+    Map<PermissionGroup, PermissionStatus> permission =
+    await PermissionHandler()
+        .requestPermissions([PermissionGroup.microphone]);
+    print('申请权限');
+    print(permission[PermissionGroup.microphone]);
+    if (permission[PermissionGroup.microphone] == PermissionStatus.granted) {
+      // showToast(msg: "权限申请通过");
+      print("权限申请通过");
+    } else {
+      // showToast(msg: "权限申请被拒绝");
+      print("权限申请被拒绝");
+    }
   }
 
   /// 开始识别
