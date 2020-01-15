@@ -3098,8 +3098,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -3146,8 +3151,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -3306,8 +3316,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -3330,8 +3345,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -3360,8 +3380,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -3644,8 +3669,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -3692,8 +3722,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -4016,8 +4051,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
                     // jsonable arg
                     boolean argvar2 = var2;
         
@@ -4043,8 +4083,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -4073,8 +4118,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -4920,8 +4970,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
                     // jsonable arg
                     boolean argvar2 = var2;
         
@@ -4947,8 +5002,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -4977,8 +5037,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -5113,8 +5178,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
                     // jsonable arg
                     boolean argvar2 = var2;
         
@@ -5140,8 +5210,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -5170,8 +5245,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -6263,8 +6343,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -6311,8 +6396,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -7165,8 +7255,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -7195,8 +7290,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -7387,8 +7487,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -7417,8 +7522,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -8008,8 +8118,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -8032,8 +8147,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -8249,8 +8369,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -8297,8 +8422,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -8410,8 +8540,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     String argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -8492,8 +8627,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -8516,8 +8656,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -8546,8 +8691,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -8916,8 +9066,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
                     // jsonable arg
                     boolean argvar2 = var2;
         
@@ -8943,8 +9098,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -8973,8 +9133,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -9280,8 +9445,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -9304,8 +9474,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -9547,8 +9722,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
                     // jsonable arg
                     boolean argvar2 = var2;
         
@@ -9574,8 +9754,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -9604,8 +9789,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -9740,8 +9930,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
                     // jsonable arg
                     boolean argvar2 = var2;
         
@@ -9767,8 +9962,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -9797,8 +9997,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -10177,8 +10382,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -10207,8 +10417,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -10428,8 +10643,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -10458,8 +10678,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -10889,8 +11114,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
                     // jsonable arg
                     boolean argvar2 = var2;
         
@@ -10916,8 +11146,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -10946,8 +11181,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -11137,8 +11377,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     String argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -11202,8 +11447,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     String argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -11405,8 +11655,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -11429,8 +11684,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -11459,8 +11719,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -11742,8 +12007,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -11790,8 +12060,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -11978,8 +12253,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -12002,8 +12282,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -12032,8 +12317,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -12124,8 +12414,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -12172,8 +12467,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -12332,8 +12632,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -12380,8 +12685,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -12512,8 +12822,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
                     // jsonable arg
                     boolean argvar2 = var2;
         
@@ -12539,8 +12854,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -12569,8 +12889,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -12704,8 +13029,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
                     // jsonable arg
                     boolean argvar2 = var2;
         
@@ -12731,8 +13061,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -12761,8 +13096,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -14829,8 +15169,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     String argvar5 = var5;
                     // ref arg
-                    int argvar6 = var6.hashCode();
-                    getHEAP().put(argvar6, var6);
+                    final Integer argvar6;
+                    if (var6 != null) {
+                        argvar6 = var6.hashCode();
+                        getHEAP().put(argvar6, var6);
+                    } else {
+                        argvar6 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -14861,8 +15206,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -14889,8 +15239,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     String argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -14916,8 +15271,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -16615,8 +16975,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     String argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -17145,8 +17510,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
                     // jsonable arg
                     byte[] argvar2 = var2;
         
@@ -17172,8 +17542,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -18268,8 +18643,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     String argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -18333,8 +18713,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     String argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -18463,8 +18848,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
                     // jsonable arg
                     boolean argvar2 = var2;
         
@@ -18490,8 +18880,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -18520,8 +18915,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -19405,8 +19805,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -19453,8 +19858,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -19778,8 +20188,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
                     // jsonable arg
                     boolean argvar2 = var2;
         
@@ -19805,8 +20220,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -19835,8 +20255,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -19970,8 +20395,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
                     // jsonable arg
                     boolean argvar2 = var2;
         
@@ -19997,8 +20427,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -20027,8 +20462,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -20598,8 +21038,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -20646,8 +21091,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -20757,8 +21207,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     String argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -20839,8 +21294,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -20863,8 +21323,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -20893,8 +21358,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -21396,8 +21866,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -21420,8 +21895,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -21450,8 +21930,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar3 = var3;
                     // ref arg
-                    int argvar4 = var4.hashCode();
-                    getHEAP().put(argvar4, var4);
+                    final Integer argvar4;
+                    if (var4 != null) {
+                        argvar4 = var4.hashCode();
+                        getHEAP().put(argvar4, var4);
+                    } else {
+                        argvar4 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -22272,8 +22757,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
                     // jsonable arg
                     int argvar1 = var1;
                     // ref arg
-                    int argvar2 = var2.hashCode();
-                    getHEAP().put(argvar2, var2);
+                    final Integer argvar2;
+                    if (var2 != null) {
+                        argvar2 = var2.hashCode();
+                        getHEAP().put(argvar2, var2);
+                    } else {
+                        argvar2 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
@@ -22320,8 +22810,13 @@ public class XfiatFluttifyPlugin implements FlutterPlugin, MethodChannel.MethodC
         
                     // convert to jsonable data
                     // ref arg
-                    int argvar1 = var1.hashCode();
-                    getHEAP().put(argvar1, var1);
+                    final Integer argvar1;
+                    if (var1 != null) {
+                        argvar1 = var1.hashCode();
+                        getHEAP().put(argvar1, var1);
+                    } else {
+                        argvar1 = null;
+                    }
         
                     // call dart method
                     callbackChannel.invokeMethod(
